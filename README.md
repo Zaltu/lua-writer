@@ -1,4 +1,4 @@
-### Lua Writer
+# Lua Writer
 Convert Lua tables and JSON files to Lua importable tables
 
 This module means to present a way of easily generating Lua *importable* files with the information found in an existing Lua table variable.
