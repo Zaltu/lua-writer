@@ -118,7 +118,7 @@ local function convert(tab, keystr)
 		elseif type(value) == BOOLEAN then
 			--Can't concatenate boolean values REEEEEEEEEEEEE
 			if value then insert="true" else insert="false" end
-			luastr = luastr..keystr..ty(ley).." = "..insert.."\n"
+			luastr = luastr..keystr..ty(key).." = "..insert.."\n"
 		else
 			--All other formats not currenlty supported. Leave a commented line in the output file.
 			luastr = luastr.."--unsupported type for:   "..value.."\n"
