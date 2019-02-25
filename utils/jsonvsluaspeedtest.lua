@@ -26,14 +26,14 @@ end
 --Load json file 10000 times.
 start = os.clock()
 for i=1,10000 do
-    recieved = read("myfile.json"})
+    recieved = read("myfile.json")
 end
 jsontime = os.clock() - start
 
 --Load Lua file 10000 times
 start = os.clock()
 for i=1,10000 do
-    recieved = require("myfile")
+    recieved = dofile("myfile.lua")
 end
 luatime = os.clock() - start
 
